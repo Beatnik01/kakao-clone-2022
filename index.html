@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kakaotalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>20:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kakao Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kakao Account, log in with your email or phone number
+      </p>
+    </header>
+
+    <!-- post - 중요한 정보 암호화, 서버에 data를 보낼떄 -->
+    <!-- get - 암호화가 필요없는 단순한 정보 (url에 입력한 정보가 다 보임) -->
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        required="email"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        name="password"
+        required="password"
+        type="password"
+        placeholder="Password"
+      />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/77bb1adb1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
