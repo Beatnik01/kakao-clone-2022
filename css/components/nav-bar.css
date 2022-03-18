@@ -7,7 +7,7 @@
   /* padding에 맞춰서 box 사이즈를 늘리지 않게 만듬 */
   box-sizing: border-box;
   /* *** */
-  border-top: 1px solid rgba(120, 120, 120, 0.3);
+  border-top: var(--main-border);
 }
 
 .nav__list {
