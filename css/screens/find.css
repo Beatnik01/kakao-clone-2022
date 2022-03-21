@@ -100,3 +100,25 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /* 브라우저에게 어떤 것이 변화할지 알려줌 => 브라우저는 그래픽카드를 사용해 가속화 
+  => 효과가 부드럽게 변함 */
+  animation: heartBeat 1s linear infinite;
+}
